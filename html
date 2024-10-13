@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Estudiantil</title>
+    <style>
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #2d87f0;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+        /* Barra de Navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1c5ea6;
+            padding: 15px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 0 15px;
+                padding: 10px 20px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+                nav a:hover {
+                    background-color: #155284;
+                    border-radius: 8px;
+                    transform: scale(1.05);
+                }
+
+        /* Contenedor Principal */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para Secciones */
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+            .section:hover {
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            }
+
+            .section h2 {
+                margin-bottom: 15px;
+                font-size: 24px;
+                border-bottom: 2px solid #2d87f0;
+                padding-bottom: 10px;
+            }
+
+            .section ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+                .section ul li {
+                    margin-bottom: 10px;
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                    border-left: 5px solid #2d87f0;
+                    border-radius: 5px;
+                }
+
+        /* Pie de Página */
+        footer {
+            background-color: #1c5ea6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilo para hacer la página responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+                nav a {
+                    margin: 10px 0;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Portal Estudiantil</h1>
+        <p>Gestiona tus calificaciones, tareas, pagos y servicios desde un solo lugar</p>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="#calificaciones">Calificaciones</a>
+        <a href="#tareas">Tareas</a>
+        <a href="#pagos">Pagos</a>
+        <a href="#servicios">Servicios</a>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+
+        <!-- Sección de Calificaciones -->
+        <div class="section" id="calificaciones">
+            <h2>Calificaciones</h2>
+            <p>Consulta tus calificaciones más recientes.</p>
+            <ul>
+                <li>Matemáticas: 85</li>
+                <li>Física: 90</li>
+                <li>Química: 78</li>
+                <li>Literatura: 92</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Tareas -->
+        <div class="section" id="tareas">
+            <h2>Tareas</h2>
+            <p>Revisa tus tareas pendientes y sus fechas de entrega.</p>
+            <ul>
+                <li>Proyecto de ciencias: 12 de Octubre</li>
+                <li>Ensayo de literatura: 15 de Octubre</li>
+                <li>Tarea de matemáticas: 20 de Octubre</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Pagos -->
+        <div class="section" id="pagos">
+            <h2>Pagos</h2>
+            <p>Consulta tu estado de cuenta y realiza pagos en línea.</p>
+            <ul>
+                <li>Inscripción: Completado</li>
+                <li>Mensualidad: Pendiente</li>
+                <li>Actividades extracurriculares: Completado</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Servicios -->
+        <div class="section" id="servicios">
+            <h2>Servicios</h2>
+            <p>Accede a los servicios que la institución te ofrece.</p>
+            <ul>
+                <li>Biblioteca en línea</li>
+                <li>Laboratorios</li>
+                <li>Centro de tutorías</li>
+                <li>Actividades deportivas y culturales</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Portal Estudiantil. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
